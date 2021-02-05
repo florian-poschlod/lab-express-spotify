@@ -1,0 +1,15 @@
+{{!-- <h1>Albums for {{this.albums.artists.0.name}}</h1> --}}
+
+{{!-- How do i get the artist name here? --}}
+
+<h1>Albums</h1>
+
+<div class="overview-container">
+  {{#each albums}}
+  <div class="card">
+    <img src="{{this.images.1.url}}" alt="">
+    <h2>{{this.name}}</h2>
+    <a href="/tracks/{{this.id}}">View Tracks</a>
+  </div>
+  {{/each}}
+</div>
